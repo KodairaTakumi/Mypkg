@@ -1,18 +1,18 @@
 import rclpy
-from rclpy.node import Nodo
-from std_msgs.msg import Int16
+from rclpy.node import Node
+from person_msgs.msg import Person
 
 rclpy.init()
-nodo = Node("talker")
-pub = nodo.create_publisher(Int16,"countup",10)
+node = Node("talker")
+pub = node.create_publisher(Person,"person",10)
 n = 0
-
 def cb():
     global n
-    msg = Int16()
-    msg.data = n
-    pub.pblish(msg)
+    msg = Person()
+    msg.name = "小平拓海"
+    msg.age = n
+    pub.publish(msg)
     n += 1
 
-nodo.create_timer(0.5,cd)
+node.create_timer(0.5, cb)
 rclpy.spin(node)
