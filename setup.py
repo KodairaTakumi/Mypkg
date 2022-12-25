@@ -1,6 +1,7 @@
 import os
 from glob import glob
 from setuptools import setup
+
 package_name = 'mypkg'
 
 setup(
@@ -15,7 +16,7 @@ setup(
     ],
     install_requires=['setuptools'],
     zip_safe=True,
-    maintainer='takumi',
+    maintainer='Kodaira Takumi',
     maintainer_email='a48565493@icloud.com',
     description='a package for practice',
     license='BSD-3-Clause',
