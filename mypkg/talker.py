@@ -1,9 +1,9 @@
 import rclpy
 from rclpy.node import Node
-from person_msgs.msg import Query
+from person_msgs.srv import Query
 
 def cb(request, response):
-    if request.name = "小平拓海":
+    if request.name == "小平拓海":
         response.age = 20
     else:
         response.age = 44
