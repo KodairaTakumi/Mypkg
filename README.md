@@ -1,5 +1,5 @@
 # mypkg
-study ros2 robosis2022
+ロボットシステム学2022　ros2学習リポジトリ
 
 # ダウンロード
 ```
